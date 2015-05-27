@@ -1,0 +1,81 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+<script type="text/javascript" src="javascript.js"></script>
+<title>Dinesh</title>
+<script>
+function c(val)
+{
+document.getElementById("calc").innerHTML="";
+document.getElementById("evaluation").innerHTML="";
+}
+function v(n)
+{
+   	var k=document.getElementById("calc").innerHTML;
+	if(n=='c')
+		document.getElementById("calc").innerHTML="";
+else if(n=="del")
+{ 
+ document.getElementById("calc").innerHTML = k.substr(0 , k.length-1);
+}
+else
+document.getElementById("calc").innerHTML+=n;
+}
+function e() 
+{ 
+var k=document.getElementById("calc").innerHTML;
+document.getElementById("evaluation").innerHTML=eval(k);
+} 
+</script>
+</head>
+<body>
+<h1 id="h1">ABOUT MYSELF</h1>
+<p id="name">HI I'm J.DINESH.I'm from ICE dept.</p>
+	<h4 id="id2">MY HOBBIES ARE:</h4>
+	    	<div id="id3">     
+		 <ul>
+	          	<li>Playing and watching Cricket and</li>
+	          	<li>Listening To Music </li>
+              </ul>
+</div>
+<strong> I LIKE TO</strong>
+<div id="id1">
+	          <ul>
+	            <li> Code </li>
+	            <li> Learn some new things in the web related stuffs. </li>
+	          <li>Take Part in some contests in hackerrank. </li>
+			  </ul>  
+	</div>
+<div id="id4">
+<h5>And finally to say through this induction process I'm getting a very nice and handy experience as it progresses on.</h5> 
+</div>
+
+<div id="outer">
+<div id="calc"></div>
+<div id="evaluation"></div>
+<div id="keys">
+<button type="button" value="CE" class="top" name="clear" onclick="c('c')">CE</button>
+<button type="button" value="/" class="top" name="division" onclick="v('/')">/</button>
+<button type="button" value="*" class="top" name="multiplication" onclick="v('*')">*</button>
+<button type="button" value="del" class="top" name="delete" onclick="v('del')">del</button>
+<button type="button" value="7"  class="bottom" name="seven" onclick="v(7)">7</button>
+<button type="button" value="8"  class="bottom" name="eight" onclick="v(8)">8</button>
+<button type="button" value="9"  class="bottom" name="nine" onclick="v(9)">9</button>
+<button type="button" value="+"  class="rightside" name="plus" onclick="v('+')">+</button>
+<button type="button" value="4"  class="bottom" name="four" onclick="v(4)">4</button>
+<button type="button" value="5"  class="bottom" name="five" onclick="v(5)">5</button>
+<button type="button" value="6"  class="bottom" name="six" onclick="v(6)">6</button>
+<button type="button" value="-"  class="rightside" name="minus" onclick="v('-')">-</button>
+<button type="button" value="1"  class="bottom" name="one" onclick="v(1)">1</button>
+<button type="button" value="2"  class="bottom" name="two" onclick="v(2)">2</button>
+<button type="button" value="3"  class="bottom" name="third" onclick="v(3)">3</button>
+<button type="button" value="("  class="rightside" name="paranthesis" onclick="v('(')">(</button>
+<button type="button" value="0"  class="bottom" name="zero" onclick="v(0)">0</button>
+<button type="button" value="."  class="bottom" name="decimalpoint" onclick="v('.')">.</button>
+<button type="button" value=")"  class="rightside" name="paranthesis" onclick="v(')')">)</button>
+<button type="button" value="="  class="rightside" name="equal" onclick="e()">=</button>
+</div>
+</div>
+<div id="id5">THANK YOU <img src="c://img1.gif"></div>
+</body>
+</html>
